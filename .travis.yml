@@ -5,7 +5,7 @@ rvm:
 notifications:
   email:
     recipients:
-       - j.phenow@gmai.com
+       - j.phenow@gmail.com
     on_success: change
     on_failure: always
 sudo: false
