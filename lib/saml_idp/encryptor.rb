@@ -47,11 +47,6 @@ module SamlIdp
     end 
     private :key_transport_ns
 
-    def cipher_algorithm
-      Xmlenc::EncryptedData::ALGORITHMS[block_encryption_ns]
-    end 
-    private :cipher_algorithm
-
     def build_encryption_template
       xml = Builder::XmlMarkup.new
       xml.EncryptedData Id: 'ED', Type: 'http://www.w3.org/2001/04/xmlenc#Element',
